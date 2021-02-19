@@ -18,7 +18,7 @@ import okhttp3.Response;
 
 public class ResourcesResponseHandler implements ResponseHandler<List<DavResource>> {
 
-    private static final String TAG = ResourcesResponseHandler.class.getSimpleName();
+    //private static final String TAG = ResourcesResponseHandler.class.getSimpleName();
 
     @Override
     public List<DavResource> handleResponse(Response response) throws IOException {
@@ -29,7 +29,8 @@ public class ResourcesResponseHandler implements ResponseHandler<List<DavResourc
             try {
                 resources.add(new DavResource(davResponse));
             } catch (URISyntaxException e) {
-                Log.w(TAG, String.format("Ignore resource with invalid URI %s", davResponse.getHref()/*.get(0)*/));
+                //Log.w(TAG, String.format("Ignore resource with invalid URI %s", davResponse.getHref()/*.get(0)*/));
+                System.out.println(String.format("Ignore resource with invalid URI %s", davResponse.getHref()));
             }
         }
         return resources;
