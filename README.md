@@ -4,6 +4,8 @@
 A WebDAV client for Java applications, using [OkHttp](https://github.com/square/okhttp) as HTTP client.
 This is a fork of [Grizzly Labs' fork](https://github.com/thegrizzlylabs/sardine-android) of the [Sardine library](https://github.com/lookfirst/sardine). 
 
+Note: Only the repo on [Codeberg](https://codeberg.org/Beloumix/oil-sardine) will be developed further.
+
 The goal is to have a pure Java library that is as lean as possible, without dependencies on Kotlin Standard library, JAXB or Apache's HttpClient. 
 
 You still need: 
