@@ -244,10 +244,10 @@ public final class SardineUtil {
      *  @return standard UTF8 charset on any version of Android
      */
     public static Charset standardUTF8() {
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
-            return StandardCharsets.UTF_8;
-        } else {
+        //if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT) {
+        //    return StandardCharsets.UTF_8;
+        //} else {
             return Charset.forName("UTF-8");
-        }
+        //}
     }
 }
